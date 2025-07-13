@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.active {
+    /* color: #00b359; */
+    position: relative;
+    padding: 5px auto;
+    transition: all 20ms ease-in-out;
+}
+
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #14e97f;
+}
+
+/* Scrollbar.css */
+/* شريط التمرير للوضع الفاتح */
+:root {
+  --scrollbar-thumb-light: #00a63e
+;
+  --scrollbar-track-light: #f1f1f1;
+}
+
+/* شريط التمرير للوضع الداكن */
+.dark {
+  --scrollbar-thumb-dark: #4b5563;
+  --scrollbar-track-dark: #1a1a1a;
+}
+
+/* التنسيق العام لشريط التمرير */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-light);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-light);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* التنسيق للوضع الداكن */
+.dark ::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-dark);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-dark);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.group:hover .icon {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 3s ease infinite;
+}
