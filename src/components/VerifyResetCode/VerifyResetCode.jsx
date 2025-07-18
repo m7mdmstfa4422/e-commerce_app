@@ -127,9 +127,9 @@ export default function VerifyResetCode() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-emerald-100 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-emerald-100 dark:from-neutral-800 dark:to-neutral-900 flex items-center justify-center p-4">
             <div className="w-full max-w-md">
-                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+                <div className="bg-white dark:bg-neutral-800 rounded-2xl shadow-xl overflow-hidden">
                     {/* Header */}
                     <div className="bg-gradient-to-r from-emerald-500 to-teal-600 p-6 text-center">
                         <h2 className="text-3xl font-bold text-white">Verify Reset Code</h2>
@@ -148,15 +148,15 @@ export default function VerifyResetCode() {
                                 onBlur={formik.handleBlur}
                                 className={`peer h-12 w-full border-b-2 ${formik.errors.resetCode && formik.touched.resetCode
                                     ? 'border-red-500'
-                                    : 'border-gray-300 dark:border-gray-600'
-                                    } bg-transparent text-gray-900 dark:text-white placeholder-transparent focus:outline-none focus:border-emerald-600`}
+                                    : 'border-neutral-300 dark:border-neutral-600'
+                                    } bg-transparent text-neutral-900 dark:text-white placeholder-transparent focus:outline-none focus:border-emerald-600`}
                                 placeholder=" "
                                 inputMode="numeric"
                                 maxLength="6"
                             />
                             <label
                                 htmlFor="resetCode"
-                                className="absolute left-0 -top-3.5 text-gray-600 dark:text-gray-400 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-emerald-600"
+                                className="absolute left-0 -top-3.5 text-neutral-600 dark:text-neutral-400 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-neutral-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-sm peer-focus:text-emerald-600"
                             >
                                 Verification Code
                             </label>
