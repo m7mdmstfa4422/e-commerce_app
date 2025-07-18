@@ -58,7 +58,7 @@ export default function WishList() {
     }
 
     return (
-        <div className="min-h-screen bg-neutral-100 dark:bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+        <div className="min-h-screen bg-neutral-100 dark:bg-neutral-900 py-12 px-4 sm:px-6 lg:px-8 transition-colors mt-16 duration-300">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-extrabold text-neutral-900 dark:text-white sm:text-4xl">
@@ -123,7 +123,7 @@ export default function WishList() {
                                     <button
                                         onClick={() => handleRemove(item.id)}
                                         disabled={removingId === item.id}
-                                        className="flex-1 bg-red-50 dark:bg-red-900/30 border border-red-100 dark:border-red-900 rounded-md py-2 px-4 text-sm font-medium text-red-700 dark:text-red-300 hover:bg-red-100 dark:hover:bg-red-900/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 flex items-center justify-center"
+                                        className="flex-1 bg-red-50 dark:bg-red-600 border border-red-100 dark:border-red-900 rounded-md py-2 px-4 text-sm font-medium text-red-700 dark:text-white hover:bg-red-100 dark:hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 flex items-center justify-center"
                                     >
                                         {removingId === item.id ? (
                                             <>

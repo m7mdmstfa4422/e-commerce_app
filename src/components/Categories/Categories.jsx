@@ -61,7 +61,7 @@ export default function Categories() {
     }
 
     return (
-        <div className="min-h-screen bg-[#f6f3f4] dark:bg-neutral-900 transition-colors duration-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-[#f6f3f4] dark:bg-neutral-900 transition-colors duration-300 mt-16 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-3xl font-bold text-center text-neutral-900 dark:text-white mb-12">
                     Browse Our Categories

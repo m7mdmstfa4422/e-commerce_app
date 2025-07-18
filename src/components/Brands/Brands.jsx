@@ -27,7 +27,7 @@ export default function Brands() {
     if (isError) return <h3 className="text-center text-red-500 dark:text-red-400 py-10">Error fetching brands...</h3>;
 
     return (
-        <div className="min-h-screen bg-[#f6f3f4] dark:bg-neutral-900 transition-colors duration-300 py-12 px-4">
+        <div className="min-h-screen bg-[#f6f3f4] dark:bg-neutral-900 transition-colors duration-300 mt-16 py-12 px-4">
             <h1 className='text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 text-center mb-12'>
                 Our Brands
             </h1>

@@ -157,9 +157,9 @@ export default function Login() {
 
                         <div className="text-center text-sm text-neutral-500 dark:text-neutral-400">
                             Don't have an account?{' '}
-                            <a href="/register" className="text-emerald-600 dark:text-emerald-400 hover:underline">
+                            <Link to="/register" className="text-emerald-600 dark:text-emerald-400 hover:underline">
                                 Sign up
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>

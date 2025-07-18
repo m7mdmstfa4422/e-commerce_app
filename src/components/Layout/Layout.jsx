@@ -8,7 +8,7 @@ export default function Layout() {
             <Nav />
         </div>
 
-        <div className="mt-16 container mx-auto">
+        <div className=" container mx-auto">
             <Outlet />
         </div>
     </>

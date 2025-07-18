@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useFormik } from 'formik';
 import axios from 'axios';
 import * as Yup from 'yup';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../Context/UserContext';
 
 export default function Register() {
@@ -231,9 +231,9 @@ export default function Register() {
 
                         <div className="text-center text-sm text-neutral-500 dark:text-neutral-400">
                             Already have an account?{' '}
-                            <a href="/login" className="text-emerald-600 dark:text-emerald-400 hover:underline">
+                            <Link to="/login" className="text-emerald-600 dark:text-emerald-400 hover:underline">
                                 Sign in
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>

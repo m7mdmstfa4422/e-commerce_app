@@ -11,7 +11,9 @@ export default function Products() {
 
     }, [])
     return <>
-        <RecentProducts />
+        <div className='mt-16'>
+            <RecentProducts />
+        </div>
     </>
 
 }

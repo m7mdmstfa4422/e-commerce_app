@@ -89,7 +89,7 @@ export default function Cart() {
     }
 
     return (
-        <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 transition-colors duration-300 py-4 px-2 sm:px-4 lg:px-8">
+        <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 transition-colors duration-300 py-4 mt-16 px-2 sm:px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="text-center mb-6">
