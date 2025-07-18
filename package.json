@@ -2,18 +2,14 @@
   "name": "ecom",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://m7mdmstfa4422.github.io/ecomstore",
+  "homepage": "https://m7mdmstfa4422.github.io/e-commerce_app",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
-    "scripts": {
-      "cssb": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/output.css --watch"
-    }
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

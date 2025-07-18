@@ -201,28 +201,28 @@ export default function Navbar() {
                   Home
                 </NavLink>
                 <NavLink
-                  to="products"
+                  to="/products"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >
                   Products
                 </NavLink>
                 <NavLink
-                  to="categories"
+                  to="/categories"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >
                   Categories
                 </NavLink>
                 <NavLink
-                  to="brands"
+                  to="/brands"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >
                   Brands
                 </NavLink>
                 <NavLink
-                  to="cart"
+                  to="/cart"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >
@@ -239,14 +239,14 @@ export default function Navbar() {
             ) : (
               <>
                 <NavLink
-                  to="register"
+                  to="/register"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >
                   Register
                 </NavLink>
                 <NavLink
-                  to="login"
+                  to="/login"
                   className={navLinkClass}
                   onClick={() => setIsOpen(false)}
                 >

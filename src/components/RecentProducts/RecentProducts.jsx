@@ -45,7 +45,7 @@ export default function RecentProducts() {
 
     async function addProductToCart(productId) {
         setCartLoadingStates(prev => ({ ...prev, [productId]: true })); // تفعيل حالة التحميل للزر المحدد
-        
+
         try {
             const response = await addToCart(productId);
             if (response?.status === 'success') {
@@ -190,11 +190,10 @@ export default function RecentProducts() {
                                             addProductToCart(product.id);
                                         }}
                                         disabled={cartLoadingStates[product.id]}
-                                        className={`flex-grow ${
-                                            cartLoadingStates[product.id]
+                                        className={`flex-grow ${cartLoadingStates[product.id]
                                                 ? 'bg-neutral-500 cursor-not-allowed'
                                                 : 'bg-gradient-to-r from-emerald-400 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-bold'
-                                        } text-white py-2.5 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2`}
+                                            } text-white py-2.5 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2`}
                                     >
                                         {cartLoadingStates[product.id] ? (
                                             <>
@@ -235,11 +234,10 @@ export default function RecentProducts() {
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className={`h-6 w-6 transition-colors duration-300 ${
-                                                wishlistStatus[product.id]
+                                            className={`h-6 w-6 transition-colors duration-300 ${wishlistStatus[product.id]
                                                     ? 'text-red-500 fill-current'
                                                     : 'text-neutral-400 dark:text-neutral-300 hover:text-red-500'
-                                            }`}
+                                                }`}
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
                                             fill={wishlistStatus[product.id] ? 'currentColor' : 'none'}

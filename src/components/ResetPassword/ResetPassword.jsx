@@ -72,7 +72,7 @@ export default function ResetPassword() {
                         duration: 4000,
                         position: 'top-center'
                     });
-                    navigate('/forgotpassword');
+                    navigate('forgotpassword');
                 } else {
                     toast.error(errorMessage, {
                         duration: 4000,

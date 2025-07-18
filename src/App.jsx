@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './App.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {  createHashRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
@@ -23,28 +23,28 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Categories from './components/Categories/Categories';
 
 import { WishContextProvider } from './components/Context/WishListContext';
-import WshList from './components/wishList/WshList';
-import Forgetpassword from './components/forgetpassword/forgetpassword';
 import VerifyResetCode from './components/VerifyResetCode/VerifyResetCode';
 import ResetPassword from './components/ResetPassword/ResetPassword';
 import Notheink from './components/Notheink/Notheink';
+import ForgetPassword from './components/Forgetpassword/Forgetpassword';
+import WishList from './components/WishList/WishList';
 
 let queryClient = new QueryClient()
 
-let router = createBrowserRouter([
+let router = createHashRouter([
   {
     path: '/', element: <Layout />, children: [{
-      index: true, element: <ProdectRoute><Home /> </ProdectRoute>
+      index: 'true', element: <ProdectRoute><Home /> </ProdectRoute>
     },
     { path: 'Products', element: <ProdectRoute><Products /></ProdectRoute> },
     { path: 'Categories', element: <ProdectRoute><Categories /></ProdectRoute> },
     { path: 'checkout', element: <ProdectRoute><CheckOut /></ProdectRoute> },
     { path: 'Cart', element: <ProdectRoute><Cart /></ProdectRoute> },
-    { path: 'wishList', element: <ProdectRoute><WshList /></ProdectRoute> },
+    { path: 'wishList', element: <ProdectRoute><WishList /></ProdectRoute> },
     { path: 'Brands', element: <ProdectRoute><Brands /></ProdectRoute> },
     { path: 'ProdactDitalis/:id/:category', element: <ProdectRoute><ProductDitals /></ProdectRoute> },
     { path: 'Register', element: <Register /> },
-    { path: 'forgotpassword', element: <Forgetpassword /> },
+    { path: 'forgotpassword', element: <ForgetPassword /> },
     { path: 'verify-reset-code', element: <VerifyResetCode /> },
     { path: 'reset-password', element: <ResetPassword /> },
     { path: 'login', element: <Login /> },
